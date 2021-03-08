@@ -6,8 +6,20 @@
 	box-sizing: border-box;
 }
 html, body {
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'myriad_regular', sans-serif;
 	user-select: none;
+}
+@font-face {
+	src: url('../vendors/fonts/myriad_regular.OTF');
+	font-family: myriad_regular;
+}
+@font-face {
+	src: url('../vendors/fonts/myriad_semi.OTF');
+	font-family: myriad_semi;
+}
+@font-face {
+	src: url('../vendors/fonts/myriad_bold.OTF');
+	font-family: myriad_bold;
 }
 
 a,
@@ -17,7 +29,7 @@ a:active,
 a:visited {text-decoration: none;}
 p {
     font-size: 16px;
-    color: #454545;
+    color: #424242;
 }
 img {width: 100%;}
 ul, ol {list-style-type: none;}
@@ -42,16 +54,17 @@ ul, ol {list-style-type: none;}
 	display: flex;
 }
 .contact_nav .contact_info {margin: 5px 0;}
+.contact_nav .nav_content span,
 .contact_nav .nav_content p {
 	font-size: 15px;
-	color: #464646;
+	color: #646363;
 	margin: 0;
 }
 .contact_nav .nav_content a {
 	display: inline-block;
 	font-size: 15px;
 	margin: 0 4px;
-	color: #464646;
+	color: #646363;
 }
 .contact_nav .nav_content img {
 	width: 22px;
@@ -149,7 +162,7 @@ ul, ol {list-style-type: none;}
 .navbar_nav .navbar-nav .nav-link {
 	position: relative;
     margin: 4px 10px;
-    font-size: 16px;
+    font-size: 17px;
     padding: 0;
     color: #fff;
 }
@@ -273,6 +286,13 @@ ul, ol {list-style-type: none;}
 	background: #F7F7F7;
 	padding: 10px;
 }
+.footer_section h4 {
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 21px;
+	color: #010101;
+}
 .footer_section .contact_info {padding: 15px 0;}
 .footer_section .contact_info p {
 	text-align: justify;
@@ -280,7 +300,7 @@ ul, ol {list-style-type: none;}
 }
 .footer_section .contact_info p a {
 	text-decoration: underline;
-	color: #2FBFD0;
+	color: #00B4C9;
 }
 .footer_section .contact_info p a:hover {text-decoration: none;}
 .footer_section .info_link a {
@@ -300,12 +320,6 @@ ul, ol {list-style-type: none;}
 .footer_section .footer_info {
 	text-align: center;
 	margin-top: 20px;
-}
-.footer_section .footer_info h4 {
-	letter-spacing: 1px;
-	margin-bottom: 20px;
-	font-size: 21px;
-	color: #010101;
 }
 .footer_section .social_link {
 	justify-content: center;
