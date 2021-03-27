@@ -1,0 +1,200 @@
+/* secound header start */
+.secound_header {
+	background: #E7E7E7;
+	padding: 20px 0 0;
+}
+.secound_header .header_img {
+	position: relative;
+	height: 400px;
+}
+.secound_header .header_img img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+/* secound header start */
+
+
+
+/* product section start */
+.category_section {
+	background: #E7E7E7;
+	padding: 25px 0;
+}
+.category_section .product_search {
+	justify-content: space-between;
+	margin-bottom: 15px;
+	align-items: center;
+	padding: 5px 20px;
+	background: #fff;
+	flex-wrap: wrap;
+	display: flex;
+}
+.category_section .product_search .search {
+	justify-content: space-between;
+	align-items: center;
+	margin: 8px 0;
+	display: flex;
+}
+.category_section .form-group {margin: 0;}
+.category_section .product_search p {
+	margin: 0 12px 0 0;
+}
+.category_section .search_form .form-group {
+	border: 1px solid #2B2B2B;
+	align-items: center;
+	border-radius: 12px;
+	overflow: hidden;
+	display: flex;
+	width: 100%;
+	margin: 10px 0;
+}
+.category_section .search_form input {
+	letter-spacing: 1px;
+	line-height: 25px;
+	padding: 0 20px 1px;
+	height: 25px;
+	border: none;
+	width: 100%;
+	outline: none;
+	background: none;
+}
+.category_section .select_btn select {
+	border-radius: 8px;
+	box-shadow: none;
+	outline: none;
+	padding: 2px 15px;
+}
+.category_section .search_form .sendBtn {
+	text-align: center;
+	background: none;
+	line-height: 28px;
+	min-width: 40px;
+	height: 25px;
+	color: #2B2B2B;
+	border: none;
+	font-size: 22px;
+}
+.category_section .product_row {
+	margin-right: -8px;
+	margin-left: -8px;
+}
+.category_section .product_row [class*="col-"] {
+	padding-right: 8px;
+	padding-left: 8px;
+}
+.category_section .product_area {
+	margin-bottom: 15px;
+	background: #fff;
+}
+.category_section .product_img {
+	position: relative;
+	background: #fff;
+	height: 310px;
+	margin: 0;
+}
+.category_section .product_img img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+.category_section .product_img .favorit {
+	position: absolute;
+	font-size: 26px;
+	top: 8px;
+	right: 12px;
+	color: #434343;
+}
+.category_section .favorit i.ion-md-heart {display: none;}
+.category_section .favorit i.ion-md-heart-empty {display: block;}
+.category_section .favorit:hover i.ion-md-heart,
+.category_section .favorit.active i.ion-md-heart {display: block;}
+.category_section .favorit:hover i.ion-md-heart-empty,
+.category_section .favorit.active i.ion-md-heart-empty {display: none;}
+.category_section .product_title {
+	text-align: center;
+	padding: 15px;
+}
+.category_section .product_action {
+	justify-content: space-between;
+	position: relative;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.category_section .product_action p {
+	text-align: center;
+	line-height: 15px;
+    overflow: hidden;
+    font-size: 16px;
+    padding: 0 6px;
+    margin: 0;
+}
+.category_section .product_action p span,
+.category_section .product_action p small {
+	display: block;
+}
+.category_section .product_action p span {
+	font-weight: bold;
+	font-size: 15px;
+}
+.category_section .product_action p small {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.category_section .product_action .minus,
+.category_section .product_action .plus {
+	background: #434343;
+	text-align: center;
+	border-radius: 2px;
+	line-height: 40px;
+	height: 40px;
+	color: #fff;
+	width: 50px;
+	border: none;
+	outline: none;
+	font-size: 22px;
+	min-width: 50px;
+	box-shadow: none;
+	font-weight: bold;
+}
+.category_section .product_action .btnadd {
+	justify-content: center;
+	border-radius: 2px;
+	align-items: center;
+	background: #434343;
+	position: absolute;
+	display: flex;
+	height: 100%;
+	color: #fff;
+	top: 0;
+	left: 0;
+	border: none;
+	width: 100%;
+	outline: none;
+	font-size: 15px;
+	font-weight: 500;
+	box-shadow: none;
+	transition: all .1s;
+}
+.category_section .product_action:hover .btnadd {top: 100%;}
+.category_section .load_more {
+	text-transform: uppercase;
+	border: 2px solid #434343;
+	border-radius: 2px;
+	font-size: 16px;
+	color: #434343;
+	margin: 5px auto 0;
+	min-width: 256px;
+	padding: 7px 20px;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	transition: all .2s;
+}
+.category_section .load_more:hover {
+	background: #434343;
+	color: #fff;
+}
+/* product section end */
