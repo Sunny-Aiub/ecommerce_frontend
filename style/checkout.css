@@ -1,46 +1,46 @@
 /* checkout section start */
-.checked_section {
+.checkout_section {
 	background: #E7E7E7;
 	padding: 15px 0;
 }
-.checked_section .checkout_container {
+.checkout_section .checkout_container {
 	border-radius: 4px;
 	padding: 15px 0;
 	background: #fff;
 }
-.checked_section .title {
+.checkout_section .title {
 	border-bottom: 1px solid #464646;
 	text-transform: uppercase;
 	padding: 0 0 8px;
 }
-.checked_section .checkout_container p {
+.checkout_section .checkout_container p {
 	letter-spacing: 1px;
 	text-align: center;
 	margin: 15px 0;
 }
-.checked_section .checkout_form {
+.checkout_section .checkout_form {
 	padding-bottom: 45px;
 	align-items: center;
 	position: relative;
 	display: flex;
 	height: 100%;
 }
-.checked_section .checkout_form form {width: 100%;}
-.checked_section .form-control:focus {
+.checkout_section .checkout_form form {width: 100%;}
+.checkout_section .form-control:focus {
 	border-color: #464646;
 	outline: none;
 	box-shadow: none;
 }
-.checked_section .checkout_form .forgot {
+.checkout_section .checkout_form .forgot {
 	text-transform: uppercase;
 	display: inline-block;
 	letter-spacing: 1px;
 	margin: 15px 0 0;
 	color: #464646;
 }
-.checked_section .checkout_form .forgot:hover {text-decoration: underline;}
-.checked_section .checkout_form .forgot span {color: #FF0101;}
-.checked_section .checkout_form .btn {
+.checkout_section .checkout_form .forgot:hover {text-decoration: underline;}
+.checkout_section .checkout_form .forgot span {color: #FF0101;}
+.checkout_section .checkout_form .btn {
 	background: #1F1F1F;
 	letter-spacing: 2px;
 	margin-right: 25px;
@@ -50,7 +50,7 @@
 	color: #fff;
 }
 
-.checked_section .others_form {
+.checkout_section .others_form {
 	padding-bottom: 45px;
 	align-items: center;
 	position: relative;
@@ -58,15 +58,15 @@
 	display: flex;
 	height: 100%;
 }
-.checked_section .others_form .btn_list {width: 100%;}
-.checked_section .others_form li {
+.checkout_section .others_form .btn_list {width: 100%;}
+.checkout_section .others_form li {
 	margin: 25px 0;
 	width: 100%;
 }
-.checked_section .others_form a.facebook {background: #3B5999;}
-.checked_section .others_form a.google {background: #D34736;}
-.checked_section .others_form a.guest {background: #8EC63F;}
-.checked_section .others_form a {
+.checkout_section .others_form a.facebook {background: #3B5999;}
+.checkout_section .others_form a.google {background: #D34736;}
+.checkout_section .others_form a.guest {background: #8EC63F;}
+.checkout_section .others_form a {
 	text-transform: uppercase;
 	display: inline-table;
 	border-radius: 4px;
@@ -76,9 +76,9 @@
 	width: 100%;
 }
 @media screen and (min-width: 992px) {
-	.checked_section .checkout_form {padding-right: 30px;}
-	.checked_section .others_form {padding-left: 30px;}
-	.checked_section .others_form:after {
+	.checkout_section .checkout_form {padding-right: 30px;}
+	.checkout_section .others_form {padding-left: 30px;}
+	.checkout_section .others_form:after {
 		display: inline-block;
 		position: absolute;
 		content: '';

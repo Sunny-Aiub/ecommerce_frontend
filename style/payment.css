@@ -1,0 +1,36 @@
+/* payment section start */
+.payment_section {
+	background: #E7E7E7;
+	padding: 15px 0;
+}
+.payment_section .payment_container {
+	border-radius: 4px;
+	padding: 15px 0;
+	background: #fff;
+}
+.payment_section .title {
+	border-bottom: 1px solid #464646;
+	text-transform: uppercase;
+	padding: 0 0 8px;
+}
+.payment_section .payment_container p {
+	letter-spacing: 1px;
+	text-align: center;
+	margin: 15px 0;
+}
+.payment_section .payment_container form {width: 100%;}
+.payment_section .form-control:focus {
+	border-color: #464646;
+	outline: none;
+	box-shadow: none;
+}
+.payment_section .payment_container .btn {
+	background: #1F1F1F;
+	letter-spacing: 2px;
+	margin-right: 25px;
+	border-radius: 4px;
+	min-width: 125px;
+	font-size: 16px;
+	color: #fff;
+}
+/* payment section end */
