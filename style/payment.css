@@ -3,6 +3,41 @@
 	background: #E7E7E7;
 	padding: 15px 0;
 }
+#voucher_modal .close {
+	position: absolute;
+	box-shadow: none;
+	outline: none;
+    right: 15px;
+    top: 10px;
+    font-size: 20px;
+}
+#voucher_modal .modal-content {padding: 35px 25px;}
+#voucher_modal label {
+	font-size: 17px;
+	color: #717171;
+}
+#voucher_modal .form-control {
+	line-height: 42px;
+	padding: 0 12px;
+    height: 42px;
+}
+.modal-open .modal {padding-right: 0 !important;}
+.modal-open .btn {
+	transition: all .2s;
+	background: #F2F3F5;
+	padding: 10px 12px;
+	color: #717171;
+	width: 100%;
+	outline: none;
+	box-shadow: none;
+	border-radius: 4px;
+}
+.modal-open .btn:hover {background: #eee;}
+#voucher_modal p {
+	text-align: center;
+	margin: 0;
+	color: #717171;
+}
 .payment_section .payment_container {
 	border-radius: 4px;
 	padding: 15px 0;
@@ -12,11 +47,10 @@
 	border-bottom: 1px solid #464646;
 	text-transform: uppercase;
 	padding: 0 0 8px;
+	margin-bottom: 25px;
 }
 .payment_section .payment_container p {
 	letter-spacing: 1px;
-	text-align: center;
-	margin: 15px 0;
 }
 .payment_section .payment_container form {width: 100%;}
 .payment_section .form-control:focus {
@@ -24,13 +58,89 @@
 	outline: none;
 	box-shadow: none;
 }
-.payment_section .payment_container .btn {
-	background: #1F1F1F;
+.payment_section .form-check-input,
+.payment_section .form-check-label {cursor: pointer;}
+.payment_section .form-check-label span {color: #FE1D1E;}
+.payment_section .cupon_btn {
+	display: inline-block;
+	margin: 0 0 10px;
+	font-size: 17px;
+	color: #FE1D1E;
+}
+
+.payment_section .payment_product {
+	border: 1px solid red;
+}
+.payment_section .product_box {
+	box-shadow: 0 0 2px 2px #000;
+	border-radius: 4px;
+	padding: 5px;
+	flex-wrap: wrpa;
+	display: flex;
+	margin-bottom: 20px;
+}
+.payment_section .product_box img {
+	margin-right: 20px;
+	object-fit: cover;
+	max-width: 100px;
+	width: 100px;
+	max-height: 120px;
+}
+.payment_section .product_article {
+	align-content: space-between;
+	display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.payment_section .price_qty {
+	justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.payment_section .price_qty .form-control {
+	border-radius: 6px;
+	padding: 4px;
+	max-width: 22px;
+}
+.payment_section .price_qty .group {display: flex;}
+.payment_section .price_qty .btn {
+	box-shadow: none;
+	outline: none;
+	border: none;
+}
+.payment_section .payment_total {position: relative;}
+.payment_section .payment_total .table th,
+.payment_section .payment_total .table td {
+	padding: 6px 0;
+	border: none;
+}
+.payment_section .payment_total .table th span,
+.payment_section .payment_total .table td span {
+	display: inline-block;
+	min-width: 75px;
+}
+.payment_section .payment_total .table .bordert {border-top: 1px solid red;}
+.payment_section .payment_total .table th:last-child,
+.payment_section .payment_total .table td:last-child {text-align: right;}
+.payment_section .payment_total .table th {
+	font-weight: 400;
+	font-size: 17px;
+}
+.payment_section .payment_option {display: flex;}
+.payment_section .payment_option img {
+	margin-right: 15px;
+	max-width: 65px;
+}
+
+.payment_section .payment_container .confirm_btn {
 	letter-spacing: 2px;
 	margin-right: 25px;
 	border-radius: 4px;
 	min-width: 125px;
 	font-size: 16px;
 	color: #fff;
+	background: #1F1F1F;
 }
 /* payment section end */

@@ -21,6 +21,36 @@
 	background: #E7E7E7;
 	padding: 25px 0;
 }
+.category_section .product_aside {
+	padding-bottom: 5px;
+	background: #FFFFFF;
+    margin-bottom: 15px;
+}
+.category_section .aside_title {
+	border-bottom: 1px solid #464646;
+	text-transform: uppercase;
+	padding: 15px 20px 12px;
+	letter-spacing: 1px;
+	text-align: center;
+	color: #0F0F0F;
+}
+.category_section .product_menu {
+	padding: 10px 20px 0;
+    max-height: 320px;
+    overflow: auto;
+}
+.category_section .product_menu a {
+	text-transform: uppercase;
+	display: inline-block;
+	transition: all .2s;
+	color: #0F0F0F;
+	margin: 6px 0;
+	width: 100%;
+}
+.category_section .product_menu li:first-child a {margin-top: 0;}
+.category_section .product_menu a.active,
+.category_section .product_menu a:hover {font-weight: 600;}
+
 .category_section .product_search {
 	justify-content: space-between;
 	margin-bottom: 15px;
