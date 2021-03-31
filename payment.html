@@ -100,7 +100,7 @@
 		<!-- payment section start -->
 		<section class="payment_section">
 			<div class="container">
-				<form action="" method="POST" class="">
+				<form action="#" method="POST">
 					<div class="payment_container">
 						<div class="col-lg-10 offset-lg-1">
 							<h4 class="title">Billing & Shipping</h4>
@@ -108,19 +108,19 @@
 								<div class="col-md-6">
 									<div class="form-group required">
 										<label>Name</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="name" class="form-control">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group required">
 										<label>Phone </label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="phone" class="form-control">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label>Email address </label>
-										<input type="email" name="" class="form-control">
+										<input type="email" name="email" class="form-control">
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -135,13 +135,13 @@
 								<div class="col-md-8">
 									<div class="form-group required">
 										<label>Address </label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="address" class="form-control">
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="form-group required">
 										<label>Address </label>
-										<select class="form-control">
+										<select class="form-control" name="select_address">
 											<option value="">1</option>
 											<option value="">2</option>
 											<option value="">3</option>
@@ -150,6 +150,7 @@
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
+										<label>Additional notes </label>
 										<textarea class="form-control" rows="3"></textarea>
 									</div>
 								</div>
@@ -167,7 +168,7 @@
 					
 					
 					<!-- voucher modal start -->
-					<div class="modal fade" id="voucher_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal fade" id="voucher_modal" tabindex="-1" role="dialog"  aria-hidden="true">
 						<div class="modal-dialog" role="document">
 							<div class="modal-content">
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -175,7 +176,7 @@
 								</button>
 								<div class="form-group required">
 									<label>Voucher Code</label>
-									<input type="text" name="" class="form-control">
+									<input type="text" name="voucher_code" class="form-control">
 								</div>
 								<div class="form-group">
 									<button class="btn" type="submit">Add Code</button>
@@ -193,7 +194,7 @@
 							<p>There are 2 items in your cart</p>
 							<a href="" class="cupon_btn" data-toggle="modal" data-target="#voucher_modal">Have a cupon?</a>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-xl-6 col-lg-7">
 									<div class="payment_product">
 										<div class="product_box">
 											<img src="images/product/01.png" alt="">
@@ -210,7 +211,7 @@
 															<option value="">2</option>
 															<option value="">3</option>
 														</select>
-														<button class="btn" type="submit"><i class="icon ion-ios-trash"></i></button>
+														<button class="btn" type="submit"><i class="icon ion-md-trash"></i></button>
 													</div>
 													<h4>BDT. 1500.00</h4>
 												</div>
@@ -227,11 +228,11 @@
 													<div class="group">
 														<label>Qty</label>
 														<select class="form-control">
-															<option value="">1</option>
+															<option value="" selected>1</option>
 															<option value="">2</option>
 															<option value="">3</option>
 														</select>
-														<button class="btn" type="submit"><i class="icon ion-ios-trash"></i></button>
+														<button class="btn" type="submit"><i class="icon ion-md-trash"></i></button>
 													</div>
 													<h4>BDT. 1500.00</h4>
 												</div>
@@ -239,7 +240,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-xl-6 col-lg-5">
 									<div class="payment_total">
 										<table class="table">
 											<tr>

@@ -18,6 +18,16 @@
 	text-align: center;
 	margin: 15px 0;
 }
+.checkout_section .required label {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+}
+.checkout_section .required label:after {
+	color: #FB4E0A;
+	content: " *";
+}
 .checkout_section .checkout_form {
 	padding-bottom: 45px;
 	align-items: center;
@@ -43,7 +53,7 @@
 .checkout_section .checkout_form .btn {
 	background: #1F1F1F;
 	letter-spacing: 2px;
-	margin-right: 25px;
+	margin: 15px 25px 0 0;
 	border-radius: 4px;
 	min-width: 125px;
 	font-size: 16px;
@@ -51,18 +61,20 @@
 }
 
 .checkout_section .others_form {
-	padding-bottom: 45px;
-	align-items: center;
 	position: relative;
 	flex-wrap: wrap;
 	display: flex;
 	height: 100%;
 }
-.checkout_section .others_form .btn_list {width: 100%;}
+.checkout_section .others_form .btn_list {
+	margin-bottom: 0;
+	width: 100%;
+}
 .checkout_section .others_form li {
 	margin: 25px 0;
 	width: 100%;
 }
+.checkout_section .others_form li:last-child {margin-bottom: 0;}
 .checkout_section .others_form a.facebook {background: #3B5999;}
 .checkout_section .others_form a.google {background: #D34736;}
 .checkout_section .others_form a.guest {background: #8EC63F;}
@@ -74,6 +86,10 @@
 	text-align: center;
 	color: #fff;
 	width: 100%;
+}
+.checkout_section .others_form a i {
+	margin-right: 10px;
+	font-size: 22px;
 }
 @media screen and (min-width: 992px) {
 	.checkout_section .checkout_form {padding-right: 30px;}
