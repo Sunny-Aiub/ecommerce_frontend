@@ -71,7 +71,7 @@
 	width: 100%;
 }
 .checkout_section .others_form li {
-	margin: 25px 0;
+	margin: 30px 0;
 	width: 100%;
 }
 .checkout_section .others_form li:last-child {margin-bottom: 0;}
@@ -80,20 +80,24 @@
 .checkout_section .others_form a.guest {background: #8EC63F;}
 .checkout_section .others_form a {
 	text-transform: uppercase;
+	padding: 9px 20px 5px;
 	display: inline-table;
 	border-radius: 4px;
-	padding: 8px 20px;
 	text-align: center;
 	color: #fff;
 	width: 100%;
 }
+.checkout_section .others_form .facebook i {font-size: 23px;}
 .checkout_section .others_form a i {
 	margin-right: 10px;
-	font-size: 22px;
+    font-size: 25px;
+    vertical-align: middle;
+    margin-top: -3px;
+    display: inline-block;
 }
 @media screen and (min-width: 992px) {
 	.checkout_section .checkout_form {padding-right: 30px;}
-	.checkout_section .others_form {padding-left: 30px;}
+	.checkout_section .others_form {padding: 12px 0 0 30px;}
 	.checkout_section .others_form:after {
 		display: inline-block;
 		position: absolute;

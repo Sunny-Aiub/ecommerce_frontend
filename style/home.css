@@ -116,7 +116,7 @@
 /* offer section start */
 .offer_section {
 	background: #E7E7E7;
-	padding: 25px 0;
+    padding: 15px 0;
 }
 .offer_section .offer_img {
 	display: inline-block;
@@ -125,7 +125,11 @@
 }
 .offer_section .offer_img img {
 	max-width: 150px;
-	width: 100%;
+    width: 100%;
+    margin: 10px 0;
+    height: 100%;
+    object-fit: cover;
+    min-height: 150px;
 }
 /* offer section end */
 
