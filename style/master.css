@@ -62,13 +62,36 @@ ul, ol {list-style-type: none;}
 }
 .contact_nav .nav_content a {
 	display: inline-block;
-	font-size: 15px;
-	margin: 0 4px;
-	color: #646363;
+    font-size: 15px;
+    margin: 0 10px;
+    color: #646363;
+}
+.contact_nav .nav_content p .car {
+    vertical-align: top;
+    margin-right: 6px;
+	width: 25px;
 }
 .contact_nav .nav_content img {
+	vertical-align: top;
+	width: 20px;
+}
+.contact_nav .nav_content .msg img {width: 21px;}
+.contact_nav .nav_content .email img {
+	vertical-align: middle;
+    margin-top: -4px;
 	width: 22px;
 }
+.contact_nav .nav_content .call img {
+	margin-top: -2px;
+	width: 27px;
+}
+.contact_nav .nav_content .app,
+.contact_nav .nav_content .flug {margin: 0 8px;}
+.contact_nav .nav_content .flug img {
+	vertical-align: middle;
+	width: 28px;
+}
+.contact_nav .nav_content .app img {margin-top: -2px;}
 /* contact nav end */
 
 
@@ -83,16 +106,12 @@ ul, ol {list-style-type: none;}
 	display: flex;
 }
 .brand_nav .brand {
-	max-width: 220px;
-	margin: 10px 0;
-	width: 100%;
-}
-.brand_nav .brand img {
-	height: 35px;
-	width: auto;
+	max-width: 225px;
+    margin: 10px 0;
+    width: 100%;
 }
 
-.brand_nav .search_form {width: 40%;}
+.brand_nav .search_form {width: 38%;}
 .brand_nav .search_form .form-group {
 	border: 1px solid #2B2B2B;
 	align-items: center;
@@ -130,12 +149,14 @@ ul, ol {list-style-type: none;}
 }
 .brand_nav .authentic a {
 	text-transform: uppercase;
-	margin-left: 15px;
-	font-weight: 400;
-	font-size: 17px;
-	color: #464646;
+    margin-left: 25px;
+    font-weight: 400;
+    font-size: 17px;
+    color: #464646;
+    letter-spacing: 1px;
 }
 .brand_nav .authentic a:hover {color: #000;}
+.brand_nav .authentic a:first-child {margin-left: 0;}
 @media screen and (max-width: 992px){
 	.brand_nav .nav_content {flex-wrap: wrap;}
 	.brand_nav .search_form {width: 100%;}
@@ -152,21 +173,25 @@ ul, ol {list-style-type: none;}
 .navbar_nav .navbar-nav {
 	justify-content: space-between;
 	width: 100%;
+	position: relative;
 }
 .navbar_nav .brand {
 	font-size: 15px;
 	color: #fff;
 }
-.navbar_nav .navbar-nav li:last-child a {margin-right: 0;}
-.navbar_nav .navbar-nav li:first-child a {margin-left: 0;}
+.navbar_nav .navbar-nav li:last-child .nav-link {margin-right: 0;}
+.navbar_nav .navbar-nav li:first-child .nav-link {margin-left: 0;}
 .navbar_nav .navbar-nav .nav-link {
+	transition: all .2s;
 	position: relative;
-    margin: 4px 10px;
     font-size: 17px;
-    padding: 0;
+    padding: 4px 0;
+	margin: 0 10px;
     color: #fff;
+	cursor: pointer;
 }
 .navbar_nav .navbar-nav .nav-link:after {
+	transition: all .2s;
 	position: absolute;
     display: none;
     content: '';
@@ -182,21 +207,104 @@ ul, ol {list-style-type: none;}
 	padding: 0;
 	border: none;
 }
+@media screen and (min-width: 992px){
+	.navbar_nav .navbar-nav li .nav-link.active:after,
+	.navbar_nav .navbar-nav li:hover .nav-link:after {
+		display: inline-block;
+	}
+	.navbar_nav .navbar-nav li:hover .dropdown_menu {display: block;}
+}
 @media screen and (max-width: 1200px){
 	.navbar_nav .navbar-nav .nav-link {
 		font-size: 14px;
 		margin: 4px;
 	}
-	.navbar_nav {padding: 5px 0;}
 }
 @media screen and (max-width: 991px){
 	.navbar_nav .navbar-nav .nav-link {margin: 4px 0;}
-}
-@media screen and (min-width: 992px){
-	.navbar_nav .navbar-nav li a.active:after,
-	.navbar_nav .navbar-nav li:hover a:after {
-		display: inline-block;
+	.navbar_nav {padding: 6px 0;}
+	.navbar_nav .navbar-collapse {
+		border-top: 1px solid rgba(255,255,255,.1);
+		margin-top: 8px;
 	}
+	
+	.navbar_nav .dropdown_li span.nav-link:before {
+		display: inline-block;
+		position: absolute;
+		background: #fff;
+		content: "";
+		right: 1px;
+		width: 15px;
+		height: 1px;
+		top: calc(50% - 1px);
+	}
+	.navbar_nav .dropdown_li span.nav-link:after {
+		display: inline-block;
+		position: absolute;
+		background: #fff;
+		height: 14px;
+		content: "";
+		width: 1px;
+		right: 8px;
+		top: 8px;
+		left: inherit;
+	}
+	.navbar_nav .navbar-nav li .nav-link {
+		border-bottom: 1px solid rgba(255,255,255,.2);
+		margin: 0;
+	}
+	.navbar_nav .navbar-nav li:last-child .nav-link {border: none;}
+}
+
+
+.navbar_nav .dropdown_menu {
+	box-shadow: 0px 4px 10px 0px rgba(170,170,170,1);
+	background: rgba(231,231,231,.95);
+	position: absolute;
+	min-width: 320px;
+    width: 100%;
+	top: 33px;
+    left: 0;
+	padding: 4px;
+    z-index: 9999;
+	display: none;
+}
+.navbar_nav .dropdown_menu a {
+	display: inline-block;
+	transition: all .2s;
+	width: 100%;
+	color: #464646;
+	padding: 0 4px;
+}
+.navbar_nav .dropdown_menu a:hover {
+	background: #F0EEEF;
+	color: #00B4C9;
+}
+.navbar_nav .dropdown_menu > li {
+	max-width: 320px;
+	width: 100%;
+	position: relative;
+}
+.navbar_nav .dropdown_menu > li:hover .sub_dropdown_menu {display: block;}
+.navbar_nav .dropdown_menu .sub_dropdown_menu {
+	background: rgba(231,231,231,.95);
+	transform: translateX(100%);
+	position: absolute;
+    width: 100%;
+    right: 0;
+    top: 0;
+	display: none;
+}
+.navbar_nav .dropdown_menu .sub_dropdown_menu li {width: 100%;}
+.navbar_nav .dropdown_menu .sub_dropdown_menu li:hover .product_img {display: block;}
+.navbar_nav .dropdown_menu .sub_dropdown_menu .product_img {
+	transform: translateX(100%);
+    position: absolute;
+	padding: 0;
+    right: 0;
+	top: 0;
+    width: 100%;
+	display: none;
 }
 /* navbar nav end */
 
@@ -303,12 +411,16 @@ ul, ol {list-style-type: none;}
 	color: #00B4C9;
 }
 .footer_section .contact_info p a:hover {text-decoration: none;}
+.footer_section .info_link,
+.footer_section .apps {
+	min-height: 180px;
+	margin: 10px 0;
+}
 .footer_section .info_link a {
 	transition: all .2s;
 	color: #424242;
 }
 .footer_section .info_link a:hover {color: #2FBFD0;}
-.footer_section .apps {margin: 20px 0 40px;}
 .footer_section .apps a {
 	margin-bottom: 8px;
 	border-radius: 6px;
@@ -316,7 +428,10 @@ ul, ol {list-style-type: none;}
 	display: block;
 	width: 100%;
 }
-.footer_section .apps a img {width: 100%;}
+.footer_section .apps a img {
+	margin-top: 4px;
+	width: 100%;
+}
 .footer_section .footer_info {
 	text-align: center;
 	margin-top: 20px;
