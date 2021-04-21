@@ -3,6 +3,7 @@
 	background: #E7E7E7;
 	padding: 25px 0;
 }
+.header_slider > .container {position: relative;}
 .header_slider .carousel-item {
 	position: relative;
 	height: 400px;
