@@ -514,15 +514,22 @@
 						<div class="product_aside">
 							<h4 class="aside_title">Filter By Price</h4>
 							<div class="product_menu">
-								<form method="post" action="/action_page_post.php">
-									<div class="form-group">
-										<input type="range" class="form-range">
+								<div class="price_filter">
+									<div class="range_box">
+										<input value="10" min="0" max="100" step="1" type="range">
+										<input value="80" min="0" max="100" step="1" type="range">
 									</div>
-									<div class="price_label">
-										<p>Price : 0 TK</p>
-										<p>Price : 0 TK</p>
+									<div class="price_value">
+										<div class="form_price">
+											<span>Price:</span>
+											<input type="number" value="110" min="0" max="100" readonly> Tk
+										</div>
+										<div class="to_price">
+											<span>Price:</span>
+											<input type="number" value="1200" min="0" max="5100" readonly> Tk
+										</div>
 									</div>
-								</form>
+								</div>
 							</div>
 						</div>
 						<div class="product_aside">
@@ -1250,6 +1257,47 @@
 				cursorwidth: '10px',
 				cursorborderradius: '0px'
 			});
+		</script>
+		<script>
+			(function() {
+				window.addEventListener('load', ()=>{
+					var parent = document.querySelector(".price_filter");
+					if(!parent) return;
+
+					var
+						rangeS = parent.querySelectorAll("input[type=range]"),
+						numberS = parent.querySelectorAll("input[type=number]");
+
+					rangeS.forEach(function(el) {
+						el.oninput = function() {
+						  var slide1 = parseFloat(rangeS[0].value),
+								slide2 = parseFloat(rangeS[1].value);
+							if (slide1 > slide2) {
+								[slide1, slide2] = [slide2, slide1];
+							}
+
+							numberS[0].value = slide1;
+							numberS[1].value = slide2;
+						}
+					});
+
+					numberS.forEach(function(el) {
+						el.oninput = function() {
+							var number1 = parseFloat(numberS[0].value),
+								number2 = parseFloat(numberS[1].value);
+
+							if (number1 > number2) {
+								var tmp = number1;
+								numberS[0].value = number2;
+								numberS[1].value = tmp;
+							}
+
+							rangeS[0].value = number1;
+							rangeS[1].value = number2;
+						}
+					});
+				});
+			})();
 		</script>
     </body>
 </html>
