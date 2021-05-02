@@ -44,6 +44,7 @@
 	display: flex;
 	padding: 6px 8px;
 }
+.product_details .quantity_btn .qounter button:hover {background: #353535;}
 .product_details .quantity_btn .qounter button {
 	background: #434343;
     border-radius: 50%;
@@ -54,13 +55,21 @@
     outline: none;
     font-size: 19px;
     line-height: 27px;
+	transition: all .2s;
 }
-.product_details .quantity_btn .qounter strong {
+.product_details .quantity_btn .qounter input {
 	display: inline-block;
 	font-size: 22px;
 	color: #000;
-	margin: 0 15px;
+	width: 32px;
+	border: none;
+	outline: none;
+	margin: 0 10px;
+	box-shadow: none;
+	font-weight: bold;
+	text-align: center;
 }
+.product_details .product_content .btnadd:hover {background: #353535;}
 .product_details .product_content .btnadd {
 	background: #434343;
 	border-radius: 4px;
@@ -70,20 +79,87 @@
 	color: #fff;
 	outline: none;
 	box-shadow: none;
+	transition: all .2s;
 }
+.product_details .product_content h6 {font-size: 17px;}
 .product_details .choice_color {
 	margin-bottom: 10px;
 	display: flex;
 }
-.product_details .choice_color a.color_one {background: #998675;}
-.product_details .choice_color a.color_two {background: #FFFFFF;}
-.product_details .choice_color a.color_three {background: #372F2D;}
-.product_details .choice_color a {
+.product_details .choice_color input.color_one:before {background: #998675;}
+.product_details .choice_color input.color_two:before {background: #FFFFFF;}
+.product_details .choice_color input.color_three:before {background: #372F2D;}
+.product_details .choice_color input[type="radio"]:checked:after {opacity: 1;}
+.product_details .choice_color input:before {
 	display: inline-block;
-	margin-right: 8px;
-	width: 25px;
-	height: 25px;
+	transition: all .2s;
+	position: absolute;
+	right: 0;
+	top: 0;
+	content: '';
+	width: 100%;
+	height: 100%;
 	border-radius: 50%;
+}
+.product_details .choice_color input {
+	display: inline-block;
+	margin-right: 9px;
+	cursor: pointer;
+	width: 27px;
+	height: 27px;
+	text-align: center;
+	position: relative;
+	border-radius: 50%;
+	transition: all .2s;
+}
+.product_details .choice_color input.active:after {opacity: 1;}
+.product_details .choice_color input:hover:after {opacity: 1;}
+.product_details .choice_color input:after {
+	display: inline-block;
+	transition: all .2s;
+	position: absolute;
+	opacity: 0;
+	right: -3px;
+	top: -3px;
+	content: '';
+	border-radius: 50%;
+	border: 2px solid #fff;
+	width: calc(100% + 6px);
+	height: calc(100% + 6px);
+}
+.product_details .size_box li {position: relative;}
+.product_details .size_box {
+	flex-wrap: wrap;
+	display: flex;
+}
+.product_details .size_box input[type="radio"]:checked + label,
+.product_details .size_box input[type="radio"]:hover + label {
+	background: #434343;
+	color: #fff;
+}
+.product_details .size_box input[type="radio"] {
+	position: relative;
+	cursor: pointer;
+	height: 27px;
+	width: 27px;
+	z-index: 1;
+	opacity: 0;
+	margin-right: 8px;
+}
+.product_details .size_box input[type="radio"] + label {
+	transition: all .2s;
+	line-height: 27px;
+	font-size: 13px;
+	top: 0;
+	left: 0;
+    height: 27px;
+	width: 27px;
+    color: #434343;
+    cursor: pointer;
+    background: #fff;
+	position: absolute;
+	text-align: center;
+    border-radius: 50%;
 }
 .product_details .social_share {
 	align-items: center;
@@ -163,12 +239,23 @@
 .product_section .product_area {
 	margin-bottom: 15px;
 	background: #fff;
+	position: relative;
+}
+.product_section .product_area .offer_tags {
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	width: auto;
+	z-index: 999;
+	max-width: 80px;
 }
 .product_section .product_img {
 	position: relative;
-	background: #fff;
-	height: 310px;
-	margin: 0;
+	max-height: 390px;
+    background: #fff;
+    height: auto;
+    margin: 0;
+	overflow: hidden;
 }
 .product_section .product_img img {
 	object-fit: cover;
@@ -190,36 +277,76 @@
 .product_section .favorit.active i.ion-md-heart-empty {display: none;}
 .product_section .product_title {
 	text-align: center;
-	padding: 15px;
+    padding: 25px 15px;
+}
+.product_section .product_title .condition {
+	position: absolute;
+    bottom: 68px;
+    width: 100%;
+    left: 0;
+    color: #434343;
+    font-size: 12px;
+    font-weight: 600;
+	padding: 0 5px;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .product_section .product_action {
 	justify-content: space-between;
 	position: relative;
 	display: flex;
-	align-items: center;
 	overflow: hidden;
+	margin-top: 22px;
+	align-items: center;
 }
-.product_section .product_action p {
+.product_section .product_action .product_value {
+	position: relative;
 	text-align: center;
 	line-height: 15px;
     overflow: hidden;
     font-size: 16px;
-    padding: 0 6px;
+    padding: 4px 6px;
     margin: 0;
+	color: #353535;
+	transition: all .2s;
+	background: #F7F7F7;
 }
-.product_section .product_action p span,
-.product_section .product_action p small {
+.product_section .product_action .product_value a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.product_section .product_action .product_value span,
+.product_section .product_action .product_value small {
 	display: block;
 }
-.product_section .product_action p span {
+.product_section .product_action .product_value input {
+	display: inline-block;
+    background: none;
+    font-size: 15px;
+    color: #000;
+    width: 32px;
+    height: 16px;
+	border: none;
+    outline: none;
+    box-shadow: none;
+    font-weight: bold;
+    text-align: center;
+}
+.product_section .product_action .product_value span {
 	font-weight: bold;
 	font-size: 15px;
 }
-.product_section .product_action p small {
+.product_section .product_action .product_value small {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+.product_section .product_action .minus:hover,
+.product_section .product_action .plus:hover {background: #353535;}
 .product_section .product_action .minus,
 .product_section .product_action .plus {
 	background: #434343;
@@ -273,5 +400,8 @@
 .product_section .load_more:hover {
 	background: #434343;
 	color: #fff;
+}
+@media screen and (max-width: 576px) {
+	.ZoomContainer {display: none;}
 }
 /* product section end */

@@ -50,14 +50,16 @@
 }
 .checkout_section .checkout_form .forgot:hover {text-decoration: underline;}
 .checkout_section .checkout_form .forgot span {color: #FF0101;}
+.checkout_section .checkout_form .btn:hover {background: #000;}
 .checkout_section .checkout_form .btn {
+	margin: 15px 25px 0 0;
 	background: #1F1F1F;
 	letter-spacing: 2px;
-	margin: 15px 25px 0 0;
 	border-radius: 4px;
 	min-width: 125px;
 	font-size: 16px;
 	color: #fff;
+	transition: all .2s;
 }
 
 .checkout_section .others_form {
@@ -74,6 +76,9 @@
 	margin: 30px 0;
 	width: 100%;
 }
+.checkout_section .others_form a.facebook:hover {background: #2d4474;}
+.checkout_section .others_form a.google:hover {background: #b03526;}
+.checkout_section .others_form a.guest:hover {background: #73a230;}
 .checkout_section .others_form li:last-child {margin-bottom: 0;}
 .checkout_section .others_form a.facebook {background: #3B5999;}
 .checkout_section .others_form a.google {background: #D34736;}
@@ -86,6 +91,7 @@
 	text-align: center;
 	color: #fff;
 	width: 100%;
+	transition: all .2s;
 }
 .checkout_section .others_form .facebook i {font-size: 23px;}
 .checkout_section .others_form a i {

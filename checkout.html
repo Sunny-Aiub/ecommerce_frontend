@@ -7,7 +7,7 @@
         <!-- title -->
         <title>Checkout | Site Title</title>
         <!-- favicon -->
-        <link rel="shortcut icon" href="images/favicon/01.jpg">
+        <link rel="shortcut icon" href="images/favicon/favicon.png">
         <!-- ionicons -->
         <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
         <!-- bootstrap css -->
@@ -23,19 +23,19 @@
 				<div class="nav_content">
 					<div class="contact_info">
 						<span>Contact Us :</span>
-						<a href=""><img src="images/icon/whatsapp.png" alt=""></a>
+						<a href="" class="whatsapp"><img src="images/icon/whatsapp.png" alt=""></a>
 						<a href="" class="msg"><img src="images/icon/msg.png" alt=""></a>
 						<a href="" class="email"><img src="images/icon/email.png" alt=""></a>
 						<a href="" class="call"><img src="images/icon/call.png" alt=""></a>
 					</div>
 					
-					<p class="d-lg-block d-none"><img class="car" src="images/icon/car.png" alt=""> Free Delivery Over TK999 For Inside Dhaka & TK 1999 For Ouside Dhaka</p>
+					<p class="d-xl-block d-none"><img class="car" src="images/icon/car.png" alt=""> Free Delivery Over TK999 For Inside Dhaka & TK 1999 For Ouside Dhaka</p>
 					
 					<div class="contact_info">
 						<a href="" class="flug"><img src="images/icon/flug.png" alt=""></a>
 						<a href="" class="app"><img src="images/icon/app.png" alt=""></a>
 						<a href=""><img src="images/icon/android.png" alt=""></a>
-						<span  class="d-sm-inline-block d-none">Download the app for exclusive offers</span>
+						<span  class="d-md-inline-block d-none">Download the app for exclusive offers</span>
 					</div>
 				</div>
 		    </div>
@@ -57,8 +57,11 @@
 						</div>
 					</form>
 					<div class="authentic order-lg-3 order-2">
-						<a href=""><i class="icon ion-md-person"></i> LOGIN/REGISTER</a>
-						<a href=""><i class="icon ion-ios-cart"></i> My Basket</a>
+						<a href=""><img src="images/icon/login.png" alt=""> LOGIN/REGISTER</a>
+						<a href="#" class="basket">
+							<img src="images/icon/basket.png" alt=""> 
+							<span>0</span> My Basket
+						</a>
 					</div>
 				</div>
 		    </div>
@@ -78,11 +81,11 @@
 						<li class="dropdown_li">
 							<span class="nav-link">Summer Sale</span>
 							<ul class="dropdown_menu">
-								<li>
+								<li class="sub_dropdown_li">
 									<a href="">Face care</a>
 									<ul class="sub_dropdown_menu">
 										<li>
-											<a href="">Shower & Bath</a>
+											<a href="">Shower root & Bath</a>
 											<a href="" class="product_img">
 												<img src="images/product/01.png" alt="">
 											</a>
@@ -147,11 +150,11 @@
 										<li><a href="">Wax Strips</a></li>
 									</ul>
 								</li>
-								<li>
+								<li class="sub_dropdown_li">
 									<a href="">Beauty care</a>
 									<ul class="sub_dropdown_menu">
 										<li>
-											<a href="">Shower & Bath</a>
+											<a href="">Shower top & Bath</a>
 											<a href="" class="product_img">
 												<img src="images/product/01.png" alt="">
 											</a>
@@ -223,14 +226,14 @@
 								<li><a href="">Gifts</a></li>
 							</ul>
 						</li>
-						<li>
+						<li class="dropdown_li">
 							<span class="nav-link">Brands</span>
 							<ul class="dropdown_menu">
-								<li>
+								<li class="sub_dropdown_li">
 									<a href="">Face care</a>
 									<ul class="sub_dropdown_menu">
 										<li>
-											<a href="">Shower & Bath</a>
+											<a href="">Shower and & Bath</a>
 											<a href="" class="product_img">
 												<img src="images/product/01.png" alt="">
 											</a>
@@ -295,11 +298,11 @@
 										<li><a href="">Wax Strips</a></li>
 									</ul>
 								</li>
-								<li>
+								<li class="sub_dropdown_li">
 									<a href="">Beauty care</a>
 									<ul class="sub_dropdown_menu">
 										<li>
-											<a href="">Shower & Bath</a>
+											<a href="">Shower tow & Bath</a>
 											<a href="" class="product_img">
 												<img src="images/product/01.png" alt="">
 											</a>
@@ -381,11 +384,11 @@
 						<li class="dropdown_li">
 							<span class="nav-link">Healthcare</span>
 							<ul class="dropdown_menu">
-								<li>
+								<li class="sub_dropdown_li">
 									<a href="">Face care</a>
 									<ul class="sub_dropdown_menu">
 										<li>
-											<a href="">Shower & Bath</a>
+											<a href="">Shower local & Bath</a>
 											<a href="" class="product_img">
 												<img src="images/product/01.png" alt="">
 											</a>
@@ -423,6 +426,71 @@
 			</div>
         </nav>
         <!-- navbar nav end -->
+		
+		
+		
+		<!-- purchase card start -->
+		<div class="purchase_cart">
+			<div class="card_title">
+				<div class="title">
+					<a href="#" class="close_bar">
+						<i class="icon ion-ios-close"></i>
+					</a>
+					<h6>Totol <small>(including savings)</small></h6>
+				</div>
+				<h5>BDT. 2000.00</h5>
+			</div>
+			<div class="purchase_body">
+				<div class="btn_group">
+					<a href="#">Checkout</a>
+					<a href="#">Clear Basket</a>
+				</div>
+			
+				<div class="product_box">
+					<img src="images/product/01.png" alt="">
+					<div class="product_article">
+						<div class="product_title">
+							<h5>Lorem ipsum</h5>
+							<p>lorem ipsum dolor sit amet. consectetur adipiscing elit.</p>
+						</div>
+						<div class="price_qty">
+							<div class="group">
+								<label>Qty</label>
+								<select class="form-control">
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+								</select>
+								<button class="btn" type="submit"><i class="icon ion-md-trash"></i></button>
+							</div>
+							<h4>BDT. 1500.00</h4>
+						</div>
+					</div>
+				</div>
+				<div class="product_box">
+					<img src="images/product/01.png" alt="">
+					<div class="product_article">
+						<div class="product_title">
+							<h5>Lorem ipsum</h5>
+							<p>lorem ipsum dolor sit amet. consectetur adipiscing elit.</p>
+						</div>
+						<div class="price_qty">
+							<div class="group">
+								<label>Qty</label>
+								<select class="form-control">
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+								</select>
+								<button class="btn" type="submit"><i class="icon ion-md-trash"></i></button>
+							</div>
+							<h4>BDT. 1500.00</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- purchase card end -->
 		
 		
 		
@@ -476,7 +544,7 @@
 		<footer class="footer_section">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-sm-6">
 						<div class="contact_info">
 							<h4>Our Company</h4>
 							<ul class="info_link">
@@ -489,7 +557,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-sm-6">
 						<div class="contact_info">
 							<h4>Quick Link</h4>
 							<ul class="info_link">
@@ -502,7 +570,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-sm-6">
 						<div class="contact_info">
 							<h4>Download Our App</h4>
 							<div class="apps">
@@ -511,7 +579,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-sm-6">
 						<div class="contact_info">
 							<h4>Contact Us</h4>
 							<ul class="info_link">
@@ -524,17 +592,18 @@
 						</div>
 					</div>
 				</div>
+				
 				<div class="row">
 					<div class="col-lg-3 col-md-6 order-lg-1 order-2">
-						<div class="footer_info">
+						<div class="footer_info left">
 							<h4>Follow Us</h4>
-							<ul class="social_link">
-								<li><a href=""><i class="icon ion-logo-facebook"></i></a></li>
-								<li><a href=""><i class="icon ion-logo-twitter"></i></a></li>
-								<li><a href=""><i class="icon ion-logo-instagram"></i></a></li>
-								<li><a href=""><i class="icon ion-logo-youtube"></i></a></li>
-								<li><a href=""><i class="icon ion-logo-linkedin"></i></a></li>
-								<li><a href=""><i class="icon ion-logo-pinterest"></i></a></li>
+							<ul class="social_link left">
+								<li><a href=""><img src="images/social/ff.png" alt=""></a></li>
+								<li><a href=""><img src="images/social/ft.png" alt=""></a></li>
+								<li><a href=""><img src="images/social/fi.png" alt=""></a></li>
+								<li><a href=""><img src="images/social/fy.png" alt=""></a></li>
+								<li><a href=""><img src="images/social/fin.png" alt=""></a></li>
+								<li><a href=""><img src="images/social/fp.png" alt=""></a></li>
 							</ul>
 						</div>
 					</div>
@@ -552,7 +621,7 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 order-lg-3 order-3">
-						<div class="footer_info">
+						<div class="footer_info right">
 							<h4>Accepted payment options</h4>
 							<figure class="payment_option">
 								<img src="images/payment/01.png" alt="">
